@@ -1,0 +1,7 @@
+{
+  "name": "moodle-dockerized",
+  "packageManager": "yarn@4.4.1",
+  "devDependencies": {
+    "semantic-release": "^24.1.2"
+  }
+}
