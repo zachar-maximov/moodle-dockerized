@@ -4,11 +4,13 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/exec",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "git add CHANGELOG.md",
+        "commitCmd": "git commit -m 'Update CHANGELOG.md'"
+      }
+    ],
     "@semantic-release/github"
-  ],
-  "exec": {
-    "prepareCmd": "git add CHANGELOG.md",
-    "commitCmd": "git commit -m 'Update CHANGELOG.md'"
-  }
+  ]
 }
